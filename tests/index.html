@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Enhanced Calendar - A Dojo calendar created by Solvoj</title>
+
+          <link rel="stylesheet" type="text/css" href="../vendor/dojo/dijit/themes/claro/claro.css" media="all"/>
+         <link rel="stylesheet" href="../css/style.css">
+         <link rel="stylesheet" href="./assets/tests.css">
+    </head>
+
+    <body class="claro">
+        <div class="demosEDTextBox">
+                <h3>Example Enhanced Calendar</h3>
+                <div class="testExample">
+                    <div data-dojo-type="ecalendar/EnhancedCalendar"
+                        data-dojo-props="showHijri:true"></div>
+                </div>
+                <br/>
+            
+                <h3>Examples Enhanced DateTextBox</h3>
+                <div class="dojoTitlePaneLabel">
+                    <label>Gregorian Calendar and Hijri Calendar</label> <span
+                        class="noticeMessage">Parameters (showHijri="true")</span>
+                </div>
+                <div class="testExample">
+                    <input id="Text3" name="noDOMvalue3" type="text"
+                        data-dojo-type="ecalendar/EnhancedDateTextBox"
+                        data-dojo-props="showHijri:true"
+                        onChange="dojo.byId('oc3').value=''+arguments[0]">
+                    onChange:<input id="oc3" size="30" disabled value="not fired yet!"
+                        autocomplete="off">
+                    <nobr>
+                        <button type=button
+                            onclick="dojo.byId('getValue3').value=''+dijit.byId('Text3').get('value');">get
+                            value</button>
+                        <input id="getValue3" size="30" disabled value="not called yet!"
+                            autocomplete="off">
+                    </nobr>
+                </div>
+                <div class="dojoTitlePaneLabel">
+                    <label>Hijri Calendar</label> <span class="noticeMessage">Parameters
+                        (showHijri="true" showGregorian="false") </span>
+                </div>
+                <div class="testExample">
+                    <input id="Text2" name="noDOMvalue2" type="text"
+                        data-dojo-type="ecalendar/EnhancedDateTextBox"
+                        data-dojo-props="showHijri:true,showGregorian:false"
+                        onChange="dojo.byId('oc2').value=''+arguments[0]">
+                    onChange:<input id="oc2" size="30" disabled value="not fired yet!"
+                        autocomplete="off">
+                    <nobr>
+                        <button type=button
+                            onclick="dojo.byId('getValue2').value=''+dijit.byId('Text2').get('value');">get
+                            value</button>
+                        <input id="getValue2" size="30" disabled value="not called yet!"
+                            autocomplete="off">
+                    </nobr>
+                </div>
+                <div class="dojoTitlePaneLabel">
+                    <label> Gregorian Calendar</label> <span class="noticeMessage">
+                        Gregorian Date by default</span>
+                </div>
+                <div class="testExample">
+                    <input id="Text1" name="noDOMvalue1" type="text"
+                        data-dojo-type="ecalendar/EnhancedDateTextBox"
+                        onChange="dojo.byId('oc1').value=''+arguments[0]">
+                    onChange:<input id="oc1" size="30" disabled value="not fired yet!"
+                        autocomplete="off">
+                    <nobr>
+                        <button type=button
+                            onclick="dojo.byId('getValue1').value=''+dijit.byId('Text1').get('value');"
+                            ID="Button2">get value</button>
+                        <input id="getValue1" size="30" disabled value="not called yet!"
+                            autocomplete="off">
+                    </nobr>
+                </div>
+            </div>
+
+             <div id="enhanced-calendar-node"></div>
+
+
+        <script src="assets/dojoconfig.js"></script>
+        <script src="../vendor/dojo/dojo/dojo.js"></script>
+        <script>
+            require(["ecalendar/EnhancedCalendar","ecalendar/EnhancedDateTextBox",'dojo/domReady!'
+            ], function (EnhancedCalendar, EnhancedDateTextBox) {
+                /*
+                  var calendar = new EnhancedCalendar({}, dojo.yId("enhanced-calendar-node"));
+                */
+            });
+        </script>
+    </body>
+</html>

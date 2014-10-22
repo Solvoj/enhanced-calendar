@@ -1,0 +1,27 @@
+/*
+  Enhanced Calendar's documentation styles
+  Special styles for presenting Enhanced Calendar's documentation and examples
+*/
+/* Body and structure
+-------------------------------------------------- */
+body {
+  position: relative;
+  padding-top: 60px;
+  background: #eeeeee;
+}
+
+body .main {
+  background-color: #FFFFFF;
+  padding: 10px;
+  height: auto;
+}
+
+.testExample {
+  /*background-color: #fbfbfb;*/
+  padding: 1em;
+  margin-bottom: 2em;
+  /*border: 1px solid #bfbfbf;*/
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+  background-color: #f7f7f9;
+}
