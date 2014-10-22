@@ -13,51 +13,15 @@ Based on the [Dojo Toolkit](http://dojotoolkit.org) component Calendar that can 
 
 + `git clone git://github.com/Solvoj/enhanced-calendar.git`
 + Add [dojo sdk](https://github.com/dojo) (or a symbolic link to the dojo sdk) under the vendor folder as follows:
-```
-└── vendor
-    └── dojo
-        ├── dojo
-        └── util
-```
+	```
+	└── vendor
+	    └── dojo
+	        ├── dijit
+	        ├── dojo
+	        ├── dojox
+	        └── util
+	```
 + Point your browser to `http://host/path/to/enhanced-calendar/tests/index.html`
-
-### In Brief
-```
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <title>Enhanced Calendar</title>
-        </head>
-    
-        <body>
-            
-
-        
-            <script>
-                var dojoConfig = {
-                    async: 1,
-                    packages: [
-                        { name: "enhanced-calendar", location: "path/to/enhanced-calendar" }
-                    ]
-                };
-            </script>
-        
-            <script type="text/javascript" src="path/to/dojo/dojo/dojo.js"></script>
-    
-            <script>
-                require(["enhanced-calendar", "dojo/query"], function (ECalendar, query) {
-                    query("#loading-button").on("click", function(e){
-                        query(e.target).button('loading');
-                        setTimeout(function(){
-                            query(e.target).button('reset');
-                        }, 2000);
-                    });
-                });
-            </script>
-        </body>
-    </html>
-```
 
 ## Useful resources
 
