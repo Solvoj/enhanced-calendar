@@ -13,6 +13,7 @@ Based on the [Dojo Toolkit](http://dojotoolkit.org) component Calendar that can 
 
 + `git clone git://github.com/Solvoj/enhanced-calendar.git`
 + Add [dojo sdk](https://github.com/dojo) (or a symbolic link to the dojo sdk) under the vendor folder as follows:
+
 	```
 	└── vendor
 	    └── dojo
