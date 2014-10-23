@@ -24,12 +24,6 @@ Based on the [Dojo Toolkit](http://dojotoolkit.org) component Calendar that can 
 	```
 + Point your browser to `http://host/path/to/enhanced-calendar/tests/index.html`
 
-## Useful resources
-
-+ [Enhanced Calendar Website with examples](http://demos.solvoj.com/calendar/)
-+ [Dojo Reference Guide (latest release version)](http://dojotoolkit.org/reference-guide/)
-+ [Dojo Reference Guide (Dojo trunk)](http://livedocs.dojotoolkit.org/)
-
 ##Community
 
 ###Reporting Issues
@@ -46,6 +40,12 @@ If you would like to suggest a fix for a particular issue, you are welcome to [f
 ###Getting Support
 
 Solvoj also offers [commercial support](http://solvoj.com/) for Enhanced Calendar, as well as Dojo and a number of other JavaScript libraries.
+
+## Useful resources
+
++ [Enhanced Calendar Website with examples](http://demos.solvoj.com/calendar/)
++ [Dojo Reference Guide (latest release version)](http://dojotoolkit.org/reference-guide/)
++ [Dojo Reference Guide (Dojo trunk)](http://livedocs.dojotoolkit.org/)
 
 ## License
 
