@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Enhanced Calendar - A Dojo calendar created by Solvoj</title>
+        <title>Enhanced Calendar</title>
 
           <link rel="stylesheet" type="text/css" href="../vendor/dojo/dijit/themes/claro/claro.css" media="all"/>
-         <link rel="stylesheet" href="../css/style.css">
+         <link rel="stylesheet" href="../widget/css/style.css">
          <link rel="stylesheet" href="./assets/tests.css">
     </head>
 
@@ -13,7 +13,7 @@
         <div class="demosEDTextBox">
                 <h3>Example Enhanced Calendar</h3>
                 <div class="testExample">
-                    <div data-dojo-type="ecalendar/EnhancedCalendar"
+                    <div data-dojo-type="enhanced-calendar/EnhancedCalendar"
                         data-dojo-props="showHijri:true"></div>
                 </div>
                 <br/>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="testExample">
                     <input id="Text3" name="noDOMvalue3" type="text"
-                        data-dojo-type="ecalendar/EnhancedDateTextBox"
+                        data-dojo-type="enhanced-calendar/EnhancedDateTextBox"
                         data-dojo-props="showHijri:true"
                         onChange="dojo.byId('oc3').value=''+arguments[0]">
                     onChange:<input id="oc3" size="30" disabled value="not fired yet!"
@@ -44,7 +44,7 @@
                 </div>
                 <div class="testExample">
                     <input id="Text2" name="noDOMvalue2" type="text"
-                        data-dojo-type="ecalendar/EnhancedDateTextBox"
+                        data-dojo-type="enhanced-calendar/EnhancedDateTextBox"
                         data-dojo-props="showHijri:true,showGregorian:false"
                         onChange="dojo.byId('oc2').value=''+arguments[0]">
                     onChange:<input id="oc2" size="30" disabled value="not fired yet!"
@@ -63,7 +63,7 @@
                 </div>
                 <div class="testExample">
                     <input id="Text1" name="noDOMvalue1" type="text"
-                        data-dojo-type="ecalendar/EnhancedDateTextBox"
+                        data-dojo-type="enhanced-calendar/EnhancedDateTextBox"
                         onChange="dojo.byId('oc1').value=''+arguments[0]">
                     onChange:<input id="oc1" size="30" disabled value="not fired yet!"
                         autocomplete="off">
@@ -76,18 +76,19 @@
                     </nobr>
                 </div>
             </div>
-
+             <br/>
              <div id="enhanced-calendar-node"></div>
 
 
         <script src="assets/dojoconfig.js"></script>
         <script src="../vendor/dojo/dojo/dojo.js"></script>
         <script>
-            require(["ecalendar/EnhancedCalendar","ecalendar/EnhancedDateTextBox",'dojo/domReady!'
-            ], function (EnhancedCalendar, EnhancedDateTextBox) {
-                /*
-                  var calendar = new EnhancedCalendar({}, dojo.yId("enhanced-calendar-node"));
-                */
+            require(["enhanced-calendar/EnhancedCalendar","enhanced-calendar/EnhancedDateTextBox",'dojo/dom','dojo/parser','dojo/domReady!'
+            ], function (EnhancedCalendar, EnhancedDateTextBox, dom, parser) {
+                  parser.parse();
+                  //example create EnhancedCalendar programming.
+                  var calendar = new EnhancedCalendar({}, dom.byId("enhanced-calendar-node"));
+                
             });
         </script>
     </body>
